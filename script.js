@@ -1,13 +1,21 @@
 let bookList = JSON.parse(localStorage.getItem('books')) || [];
 
-function addBook(title, author) {
-  bookList.push({ title, author });
-  localStorage.setItem('books', JSON.stringify(bookList));
-}
-
 function removeBook(element, title, author) {
   element.remove();
   bookList = bookList.filter((book) => book.title !== title || book.author !== author);
+  localStorage.setItem('books', JSON.stringify(bookList));
+}
+
+function addBook(title, author) {
+  for (let i = 0; i < bookList.length; i += 1) {
+    if (bookList[i].title === title) {
+      alert('Book is already exist');
+      removeBook(title, author);
+    }
+  }
+
+  bookList.push({ title, author });
+
   localStorage.setItem('books', JSON.stringify(bookList));
 }
 
