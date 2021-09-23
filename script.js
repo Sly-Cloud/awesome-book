@@ -4,9 +4,9 @@ class BookLibrary {
     this.bookList = JSON.parse(localStorage.getItem('books')) || [];
     this.bookList.forEach((book) => {
       const div = document.createElement('div');
-      div.classList.add('book');
       div.innerHTML = `
-        <p>${book.title} by ${book.author}</p>
+        <h2>${book.title}</h2>
+        <p>${book.author}</p>
       `;
 
       const removeBtn = document.createElement('button');
@@ -31,9 +31,9 @@ class BookLibrary {
     this.bookList.push({ title, author });
     localStorage.setItem('books', JSON.stringify(this.bookList));
     const div = document.createElement('div');
-    div.classList.add('book');
     div.innerHTML = `
-    <p>${title} by ${author}</p>
+    <h2>${title}</h2>
+    <p>${author}</p>
     `;
 
     const removeBtn = document.createElement('button');
