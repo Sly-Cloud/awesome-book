@@ -83,7 +83,73 @@ h2 {
   border-radius: 0.2em;
 }
 
+header {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  padding: 1rem;
+  border: 1px solid black;
+  margin-left: 10%;
+  margin-top: 3%;
+  margin-right: 10%;
+  margin-bottom: 3%;
+}
+
+#logo {
+  font-size: 2rem;
+}
+
 hr {
   margin: 20px auto;
   width: 10rem;
+}
+
+header ul {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  list-style-type: none;
+}
+
+header ul li {
+  cursor: pointer;
+  padding: 0.5em 1em;
+  border-left: 1px solid black;
+}
+
+a {
+  text-decoration: none;
+}
+
+.contact {
+  width: 70%;
+}
+
+.contact p {
+  font-size: 2rem;
+}
+
+.contact ul {
+  padding-left: 10%;
+  padding-top: 5%;
+}
+
+footer {
+  width: 80%;
+  margin-left: 10%;
+  border: 1px solid black;
+}
+
+.tim {
+  display: flex;
+  justify-content: flex-end;
+  width: 80%;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
 }
