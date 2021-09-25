@@ -8,20 +8,82 @@
   <title>Awesome Books</title>
 </head>
 <body>
-  <div id="form">
-  <h1>Awesome books</h1>
-	<div class="books"></div>
-  <hr>
-  <div  id="new_book"><h1>Add new book</h1></div>
+  <header>
+    <a id="logo"  class="at alogo" href="#">Awesome books</a>
+    <ul>
+      <li >
+        <a class="act at activate" id = "list" href="#">List</a>
+      </li>
+            <li class="at">
+        <a id = "New" class="act at"  href="#">Add new</a>
+      </li>      
+      <li>
+        <a id="cont"  class="act at" href="#">Contact</a>
+      </li>      
+    </ul>
+    
+  </header>
+  <div  class="tim">
+  <span id="date" class="date"></span>
+  </div>
+  <main id="form">
+  <h1 class="h_books">All Awesome Books</h1>
+
+	<div class="books l_books">
+  </div>
   <br>
-	<div>
+  <div class="list" id="new_book"></div>
+  
+  <br>  
+	<div class="add_new hide">
+    <h1 class ="h_add_new">Add a new book</h1>
+<br>
+<br>
+
 		<input type="text" id="title" name="title" placeholder="Title">
+    <br>
 		<input type="text" id="author" name="author" placeholder="Author">
+    <br>
 		<button type="button" class="add-book-btn">Add</button>
+    <br>
+    <br>
+    <br><br>
+    <br>
+    <br><br>
+    <br>
+    <br>
+    
 	</div>
 
-  </div>
-  <script src="script.js"></script>
+  <section class="contact hide">
+    <div>
+      <h1> Contact information</h1>
+      <br>
 
+      <p> do you have any question or you just want to say "Hello"?<br>
+        you can reach out to us
+      </p>
+      <ul>
+        <li>Our e-mail: mail@mail.com </li>
+        <li>Our phone umber: 0043586534422</li>
+        <li>Our address: Streetname 22 , 84503 city, country</li>
+      </ul>
+    </div>
+    <br>
+    <br><br>
+    <br>
+    <br>
+  </section>
+  
+  </main>
+  <br>
+  <br>
+  <footer >
+    <p>
+    @copy rights
+    </p> 
+  </footer>
+  <script src="script.js"></script>
+  <script src="full.js"></script>
 </body>
 </html>

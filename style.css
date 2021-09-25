@@ -1,3 +1,7 @@
+@font-face {
+  font-family: comic;
+  src: url('./fonts/ComicSansMS3.ttf');
+}
 
 #form {
   display: flex;
@@ -6,6 +10,7 @@
 }
 
 * {
+  font-family: Comic, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -83,7 +88,93 @@ h2 {
   border-radius: 0.2em;
 }
 
+header {
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  padding: 1rem;
+  border: 1px solid black;
+  margin-left: 10%;
+  margin-top: 3%;
+  margin-right: 10%;
+  margin-bottom: 3%;
+}
+
+.alogo {
+  color: black;
+  font-size: 2rem;
+  text-decoration: none;
+}
+
 hr {
   margin: 20px auto;
   width: 10rem;
+}
+
+header ul {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  list-style-type: none;
+}
+
+header ul li {
+  cursor: pointer;
+  padding: 0.5em 1em;
+  border-left: 1px solid black;
+}
+
+.test {
+  color: black;
+}
+
+.contact {
+  width: 70%;
+}
+
+.contact p {
+  font-size: 2rem;
+}
+
+.contact ul {
+  padding-left: 10%;
+  padding-top: 5%;
+}
+
+footer {
+  position: sticky;
+  width: 80%;
+  margin-left: 10%;
+  border: 1px solid black;
+}
+
+.tim {
+  display: flex;
+  justify-content: flex-end;
+  width: 80%;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.act {
+  text-decoration: none;
+}
+
+.at {
+  color: black;
+}
+
+.activate {
+  color: blue !important;
+}
+
+#new {
+  color: black;
 }
