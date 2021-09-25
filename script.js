@@ -35,6 +35,8 @@ class BookLibrary {
     div.innerHTML = `
     <p>${title} by ${author}</p>
     `;
+    document.getElementById('title').value = '';
+    document.getElementById('author').value = '';
 
     const removeBtn = document.createElement('button');
     removeBtn.innerText = 'Remove';

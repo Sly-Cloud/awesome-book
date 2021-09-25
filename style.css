@@ -1,12 +1,16 @@
+@font-face {
+  font-family: comic;
+  src: url('./fonts/ComicSansMS3.ttf');
+}
 
 #form {
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 * {
+  font-family: Comic, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -97,9 +101,10 @@ header {
   margin-bottom: 3%;
 }
 
-#logo {
+.alogo {
   color: black;
   font-size: 2rem;
+  text-decoration: none;
 }
 
 hr {
@@ -158,23 +163,18 @@ footer {
   display: block;
 }
 
-a {
-  color: rgb(26, 4, 4);
+.act {
   text-decoration: none;
 }
 
-a:link {
-  color: green;
+.at {
+  color: black;
 }
 
-a:visited {
-  color: purple;
+.activate {
+  color: blue !important;
 }
 
-a:hover {
-  color: yellow;
-}
-
-a:active {
-  text-decoration: underline;
+#new {
+  color: black;
 }

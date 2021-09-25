@@ -6,6 +6,7 @@ const hbook = document.querySelector('.h_add_new');
 const hlist = document.querySelector('.h_books');
 const contact = document.querySelector('#cont');
 const contactSC = document.querySelector('.contact');
+const anchors = document.querySelectorAll('ul li a');
 
 window.addEventListener('load', () => {
   /* eslint-disable-next-line no-undef */
@@ -42,7 +43,7 @@ window.addEventListener('load', () => {
   const date = `${today.getFullYear()}-${tooday.getMonth() + 1}-${today.getDate()}`;
   console.log(`Current Time : ${hour}${prepand} : ${minute} : ${second}`);
   document.getElementById('date').innerHTML = `${date} ${daylist[day]} ${hour} : ${minute} : ${second}${prepand}`;
-  list.style = 'background-color :green';
+  // list.style = 'background-color :green';
 });
 
 list.addEventListener('click', () => {
@@ -50,9 +51,15 @@ list.addEventListener('click', () => {
   hbook.classList.add('hide');
   booklists.classList.add('show');
   hlist.classList.add('show');
-  list.style = 'background-color :green';
-  newBtn.style = 'background-color :none';
-  contact.style = 'background-color :none';
+  list.classList.add('ctive');
+  anchors.forEach((elementNode) => {
+    elementNode.classList.remove('activate');
+  });
+  list.classList.add('activate');
+
+  // list.style = 'background-color :green';
+  // newBtn.style = 'background-color :none';
+  // contact.style = 'background-color :none';
 
   addNew.classList.remove('show');
 
@@ -73,10 +80,14 @@ newBtn.addEventListener('click', () => {
   contactSC.classList.add('hide');
 
   addNew.classList.add('show');
+  anchors.forEach((elementNode) => {
+    elementNode.classList.remove('activate');
+  });
+  newBtn.classList.add('activate');
 
-  newBtn.style = 'background-color :green';
+  /* newBtn.style = 'background-color :green';
   list.style = 'background-color :none';
-  contact.style = 'background-color :none';
+  contact.style = 'background-color :none'; */
 });
 
 contact.addEventListener('click', () => {
@@ -87,8 +98,12 @@ contact.addEventListener('click', () => {
   addNew.classList.add('hide');
   addNew.classList.remove('show');
   contactSC.classList.add('show');
+  anchors.forEach((elementNode) => {
+    elementNode.classList.remove('activate');
+  });
+  contact.classList.add('activate');
 
-  contact.style = 'background-color :green';
+  /* contact.style = 'background-color :green';
   newBtn.style = 'background-color :none';
-  list.style = 'background-color :none';
+  list.style = 'background-color :none'; */
 });
