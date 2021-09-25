@@ -3,6 +3,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 * {
@@ -84,6 +85,7 @@ h2 {
 }
 
 header {
+  color: black;
   display: flex;
   justify-content: space-between;
   width: 80%;
@@ -96,6 +98,7 @@ header {
 }
 
 #logo {
+  color: black;
   font-size: 2rem;
 }
 
@@ -117,8 +120,8 @@ header ul li {
   border-left: 1px solid black;
 }
 
-a {
-  text-decoration: none;
+.test {
+  color: black;
 }
 
 .contact {
@@ -135,6 +138,7 @@ a {
 }
 
 footer {
+  position: sticky;
   width: 80%;
   margin-left: 10%;
   border: 1px solid black;
@@ -152,4 +156,25 @@ footer {
 
 .show {
   display: block;
+}
+
+a {
+  color: rgb(26, 4, 4);
+  text-decoration: none;
+}
+
+a:link {
+  color: green;
+}
+
+a:visited {
+  color: purple;
+}
+
+a:hover {
+  color: yellow;
+}
+
+a:active {
+  text-decoration: underline;
 }

@@ -42,6 +42,7 @@ window.addEventListener('load', () => {
   const date = `${today.getFullYear()}-${tooday.getMonth() + 1}-${today.getDate()}`;
   console.log(`Current Time : ${hour}${prepand} : ${minute} : ${second}`);
   document.getElementById('date').innerHTML = `${date} ${daylist[day]} ${hour} : ${minute} : ${second}${prepand}`;
+  list.style = 'background-color :green';
 });
 
 list.addEventListener('click', () => {
@@ -49,6 +50,9 @@ list.addEventListener('click', () => {
   hbook.classList.add('hide');
   booklists.classList.add('show');
   hlist.classList.add('show');
+  list.style = 'background-color :green';
+  newBtn.style = 'background-color :none';
+  contact.style = 'background-color :none';
 
   addNew.classList.remove('show');
 
@@ -58,6 +62,8 @@ list.addEventListener('click', () => {
 newBtn.addEventListener('click', () => {
   booklists.classList.add('hide');
   booklists.classList.remove('show');
+  hbook.classList.add('show');
+  hbook.classList.remove('hide');
 
   hlist.classList.add('hide');
   hlist.classList.remove('show');
@@ -67,6 +73,10 @@ newBtn.addEventListener('click', () => {
   contactSC.classList.add('hide');
 
   addNew.classList.add('show');
+
+  newBtn.style = 'background-color :green';
+  list.style = 'background-color :none';
+  contact.style = 'background-color :none';
 });
 
 contact.addEventListener('click', () => {
@@ -77,4 +87,8 @@ contact.addEventListener('click', () => {
   addNew.classList.add('hide');
   addNew.classList.remove('show');
   contactSC.classList.add('show');
+
+  contact.style = 'background-color :green';
+  newBtn.style = 'background-color :none';
+  list.style = 'background-color :none';
 });
